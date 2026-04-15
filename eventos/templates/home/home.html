@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Evento</th>
+                <th>Local</th>
+            </tr>
+        </thead>
+        {% for evento in lista_eventos %}
+        <tbody>
+            <tr>
+                <td>{{ evento.nome_evento }}</td>
+                <td>{{ evento.nome_local }}</td>
+            </tr>
+        </tbody>
+        {% endfor %}
+    </table>
+</body>
+</html>
